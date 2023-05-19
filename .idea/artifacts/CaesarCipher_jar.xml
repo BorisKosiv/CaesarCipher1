@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CaesarCipher:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CaesarCipher_jar</output-path>
+    <root id="archive" name="CaesarCipher.jar">
+      <element id="module-output" name="CaesarCipher" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jetbrains/annotations/20.1.0/annotations-20.1.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
