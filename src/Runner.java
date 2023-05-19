@@ -11,7 +11,7 @@ FileService fileService;
 
     public void run(String[] args) throws IOException {
     if (args.length > 0 ) {
-        
+
         String command = (args[0]).toLowerCase();
         String path = args[1];
         String typeCommand = "";
