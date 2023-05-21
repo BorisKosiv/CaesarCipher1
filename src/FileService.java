@@ -1,12 +1,12 @@
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
+
 
 public class FileService {
      public  String read(String path) throws IOException {
 
-        String message = Files.readString(Paths.get(path));
+        String message = Files.readString(Path.of(path));
 
         return message;
      }

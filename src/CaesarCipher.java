@@ -4,9 +4,9 @@ public class CaesarCipher {
     public String encryptDecrypt(String command, String message, int shiftKey) {
         String alphabet;
         String whichIsLanguage = LanguageDetect.detectLanguage(message, alphabetEN, alphabetUA);
-        if (whichIsLanguage == "UA"){
+        if (whichIsLanguage.equals("UA")){
             alphabet = alphabetUA;
-        } else if (whichIsLanguage == "EN"){
+        } else if (whichIsLanguage.equals("EN")){
             alphabet = alphabetEN;
         } else {
             alphabet = "";
@@ -17,7 +17,7 @@ public class CaesarCipher {
         for (int i = 0; i < message.length(); i++) {
             char c = message.charAt(i);
             int charPosition = alphabet.indexOf(c);
-            if (command.equals("encrypt")){
+            if (command.equals("ENCRYPT")){
                 if (charPosition >= 0) {
                     int keyVal = (shiftKey + charPosition) % lengthAlphabet;
                     replaceVal = alphabet.charAt(keyVal);
@@ -25,7 +25,7 @@ public class CaesarCipher {
                     replaceVal = c;
                 }
                 outputText += replaceVal;
-            } else if (command.equals("decrypt")){
+            } else if (command.equals("DECRYPT")){
                 if (charPosition >= 0) {
                     int keyVal = (charPosition - shiftKey) % lengthAlphabet;
                     if (keyVal < 0) {
@@ -40,5 +40,8 @@ public class CaesarCipher {
         }
         return outputText;
     }
-
+    public Integer brute_FORCE(String message, String charOccurMax){
+   int keyVal = 0;
+        return  Integer.valueOf(keyVal);
+    }
 }

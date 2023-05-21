@@ -7,7 +7,8 @@ public class Main {
     public static void main(String[] args) throws IOException {
         FileService fileService = new FileService();
         CaesarCipher caesarCipher = new CaesarCipher();
-        Runner runner = new Runner(caesarCipher, fileService);
+        CountOccurrenceOfChars countOccurrenceOfChars = new CountOccurrenceOfChars();
+        Runner runner = new Runner(caesarCipher, fileService, countOccurrenceOfChars);
         runner.run(args);
 
     }
