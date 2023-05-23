@@ -5,10 +5,10 @@ public class Main {
 
 
     public static void main(String[] args) throws IOException {
+
         FileService fileService = new FileService();
         CaesarCipher caesarCipher = new CaesarCipher();
-        CountOccurrenceOfChars countOccurrenceOfChars = new CountOccurrenceOfChars();
-        Runner runner = new Runner(caesarCipher, fileService, countOccurrenceOfChars);
+        Runner runner = new Runner(caesarCipher, fileService);
         runner.run(args);
 
     }
