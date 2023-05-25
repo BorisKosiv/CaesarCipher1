@@ -1,13 +1,16 @@
 public class LanguageDetect {
+    private static final String alphabetEN = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    private static final String alphabetUA = "абвгґдеєжзиіїйклмнопрстуфхцчшщьюяАБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЮЯ";
 
-    public static String detectLanguage(String text){ //, String alphabetEN, String alphabetUA) {
-        int UA_CharsCount  = countChars(text, CaesarCipher.alphabetUA);
-        int EN_CharCount = countChars(text, CaesarCipher.alphabetEN);
+
+    public static String detectLanguage(String text) {
+        int UA_CharsCount  = countChars(text, alphabetUA);
+        int EN_CharCount = countChars(text, alphabetEN);
         int maxCount = Math.max(UA_CharsCount, EN_CharCount);
         if (maxCount == UA_CharsCount) {
-            return CaesarCipher.alphabetUA;
+            return alphabetUA;
         } else if (maxCount == EN_CharCount) {
-            return CaesarCipher.alphabetEN;
+            return alphabetEN;
         } else {
             return "NOTdetected";
         }

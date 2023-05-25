@@ -15,4 +15,5 @@ public class FileService {
          Files.writeString(Path.of(path + typeCommand), cypherUncypherText);
 
      }
+
 }
