@@ -1,7 +1,11 @@
 import java.util.*;
 
 public class CountOccurrenceOfChars {
-    public static Character countChars(String message, String alphabet) {
+    Alphabet alphabet;
+    public CountOccurrenceOfChars(Alphabet alphabet) {
+        this.alphabet = alphabet;
+    }
+    public Character countChars(String message) {
         //HashMap char as a key and occurrence as a value
         HashMap<Character, Integer> charCount = new HashMap<>();
         for (int i = message.length() - 1; i >= 0; i--) {
