@@ -1,3 +1,5 @@
+package org.example.com;
+
 import java.io.IOException;
 
 public class Runner {

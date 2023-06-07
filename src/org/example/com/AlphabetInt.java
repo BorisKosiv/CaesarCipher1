@@ -1,3 +1,5 @@
+package org.example.com;
+
 public interface AlphabetInt {
 
     int indexOf(char c);

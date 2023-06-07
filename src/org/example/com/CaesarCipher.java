@@ -1,3 +1,5 @@
+package org.example.com;
+
 public class CaesarCipher  {
     Alphabet alphabet;
 

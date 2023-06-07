@@ -1,3 +1,5 @@
+package org.example.com;
+
 public  class Alphabet implements AlphabetInt {
     private String alphabet;
 
