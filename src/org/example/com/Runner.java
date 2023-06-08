@@ -36,6 +36,8 @@ FileService fileService;
              Character charOccurMax = countOccurrenceOfChars.countChars(message);
              int findKey = caesarCipher.brute_FORCE(charOccurMax);
              System.out.println("Key value: " + findKey);
+        } else {
+            System.out.println("Wrong command - three available options: [ENCRYPT, DECRYPT, BRUTE_FORCE]");
         }
 
       }
